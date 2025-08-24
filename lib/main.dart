@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context)=>add(),
-      builder: (context,child)=>const MaterialApp(
+      builder: (context,child)=> MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: IntroPage(),
-        theme: LightMode,
-        darkTheme: DarkMode,
+        home: const IntroPage(),
+        theme: lightmode,
+        darkTheme: darkmode,
       ),
     );
   }
