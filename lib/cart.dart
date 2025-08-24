@@ -25,7 +25,7 @@ class CartPage extends StatelessWidget {
             Expanded(
               child: ListView.builder(itemCount:value.getusercart().length,itemBuilder: (context,index){
                 Cloth individualcloth=value.getusercart()[index];
-                return cartitem(cloth:individualcloth);
+                return Cartitem(cloth:individualcloth);
               }
             )
           )

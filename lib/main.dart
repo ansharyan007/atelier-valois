@@ -1,5 +1,6 @@
 import 'package:atelier_valois/Intro.dart';
 import 'package:atelier_valois/component/add.dart';
+import 'package:atelier_valois/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
       builder: (context,child)=>const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: IntroPage(),
+        theme: LightMode,
+        darkTheme: DarkMode,
       ),
     );
   }

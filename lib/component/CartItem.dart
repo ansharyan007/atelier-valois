@@ -3,15 +3,15 @@ import 'package:atelier_valois/component/add.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class cartitem extends StatefulWidget {
-  Cloth cloth;
-  cartitem({super.key,required this.cloth});
+class Cartitem extends StatefulWidget {
+  final Cloth cloth;
+  Cartitem({super.key,required this.cloth});
 
   @override
-  State<cartitem> createState() => _cartState();
+  State<Cartitem> createState() => _cartState();
 }
 
-class _cartState extends State<cartitem> {
+class _cartState extends State<Cartitem> {
   void removeitem(){
     Provider.of<add>(context,listen: false).RemoveItem(widget.cloth);
   }

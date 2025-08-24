@@ -71,7 +71,7 @@ class _ShopPageState extends State<ShopPage> {
             itemCount: 4,
             itemBuilder: (context,index){
               Cloth cloth=value.getclothlist()[index];
-              return clothtile(
+              return Clothtile(
                 ontap: ()=>addcloth(cloth),
                 cloth:cloth ,
               );

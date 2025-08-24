@@ -1,10 +1,9 @@
 import 'package:atelier_valois/cloth.dart';
 import 'package:flutter/material.dart';
-import '';
-class clothtile extends StatelessWidget {
-  Cloth cloth;
-  void Function()?ontap;
-  clothtile({super.key,required this.cloth,required this.ontap});
+class Clothtile extends StatelessWidget {
+  final Cloth cloth;
+  final void Function()?ontap;
+  Clothtile({super.key,required this.cloth,required this.ontap});
 
   @override
   Widget build(BuildContext context) {
